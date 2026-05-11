@@ -3,7 +3,8 @@ export const profile = {
   role: 'Frontend Developer',
   location: 'Bangladesh',
   email: 'hello.shanto@example.com',
-  resumeUrl: '/resume.pdf',
+  resumeUrl: '/Shanto%20Paul%20Resume.pdf',
+  resumeFileName: 'Shanto Paul Resume.pdf',
   tagline: 'I build modern, responsive, and animated web applications using React.js and Tailwind CSS.',
   summary:
     'A frontend developer focused on clean UI, responsive layouts, React components, and client-ready web experiences.',

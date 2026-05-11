@@ -1,0 +1,89 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Length 4780 >>
+stream
+1 1 1 rg 0 0 612 792 re f
+0.93 0.97 1.00 rg 0 714 612 78 re f
+0.10 0.42 0.78 rg 54 707 74 4 re f
+BT /F2 24 Tf 0.06 0.09 0.16 rg 54 746 Td (SHANTO PAUL) Tj ET
+BT /F2 12 Tf 0.10 0.42 0.78 rg 54 724 Td (Frontend Developer) Tj ET
+BT /F1 9 Tf 0.32 0.37 0.45 rg 318 748 Td (Bangladesh  |  hello.shanto@example.com  |  github.com/shantopaul) Tj ET
+BT /F1 9 Tf 0.32 0.37 0.45 rg 318 731 Td (React.js  |  Tailwind CSS  |  Responsive Design  |  Framer Motion) Tj ET
+BT /F2 10 Tf 0.10 0.42 0.78 rg 54 675 Td (PROFESSIONAL SUMMARY) Tj ET
+0.83 0.88 0.94 RG 0.8 w 54 668 m 558 668 l S
+BT /F1 10 Tf 0.06 0.09 0.16 rg 54 650 Td (Frontend developer focused on building modern, responsive, and animated web applications using React.js) Tj ET
+BT /F1 10 Tf 0.06 0.09 0.16 rg 54 635 Td (and Tailwind CSS. Comfortable creating clean UI, reusable components, smooth interactions, and client-ready) Tj ET
+BT /F1 10 Tf 0.06 0.09 0.16 rg 54 620 Td (portfolio, landing page, and website experiences for freelance and professional use.) Tj ET
+BT /F2 10 Tf 0.10 0.42 0.78 rg 54 584 Td (CORE SKILLS) Tj ET
+0.83 0.88 0.94 RG 0.8 w 54 577 m 558 577 l S
+BT /F2 10 Tf 0.10 0.42 0.78 rg 54 560 Td (") Tj ET
+BT /F1 9.4 Tf 0.06 0.09 0.16 rg 66 560 Td (Frontend: HTML, CSS, JavaScript, React.js, Tailwind CSS, Responsive Design) Tj ET
+BT /F2 10 Tf 0.10 0.42 0.78 rg 54 543 Td (") Tj ET
+BT /F1 9.4 Tf 0.06 0.09 0.16 rg 66 543 Td (Tools: Git, GitHub, VS Code, Figma, Vite, npm workflow) Tj ET
+BT /F2 10 Tf 0.10 0.42 0.78 rg 54 526 Td (") Tj ET
+BT /F1 9.4 Tf 0.06 0.09 0.16 rg 66 526 Td (UI Quality: Modern layouts, dark/light themes, accessibility basics, smooth animations) Tj ET
+BT /F2 10 Tf 0.10 0.42 0.78 rg 54 509 Td (") Tj ET
+BT /F1 9.4 Tf 0.06 0.09 0.16 rg 66 509 Td (Currently Learning: Node.js, MongoDB, Next.js, Express.js) Tj ET
+BT /F2 10 Tf 0.10 0.42 0.78 rg 54 474 Td (SERVICES) Tj ET
+0.83 0.88 0.94 RG 0.8 w 54 467 m 558 467 l S
+BT /F2 10 Tf 0.10 0.42 0.78 rg 54 450 Td (") Tj ET
+BT /F1 9.4 Tf 0.06 0.09 0.16 rg 66 450 Td (Frontend Development: responsive websites with clean, maintainable component structure) Tj ET
+BT /F2 10 Tf 0.10 0.42 0.78 rg 54 433 Td (") Tj ET
+BT /F1 9.4 Tf 0.06 0.09 0.16 rg 66 433 Td (React Development: interactive single-page interfaces and reusable UI components) Tj ET
+BT /F2 10 Tf 0.10 0.42 0.78 rg 54 416 Td (") Tj ET
+BT /F1 9.4 Tf 0.06 0.09 0.16 rg 66 416 Td (Landing Page Design: modern pages with strong visual hierarchy and conversion-focused CTA sections) Tj ET
+BT /F2 10 Tf 0.10 0.42 0.78 rg 54 399 Td (") Tj ET
+BT /F1 9.4 Tf 0.06 0.09 0.16 rg 66 399 Td (Bug Fixing and Redesign: layout repair, responsive fixes, UI polish, and website modernization) Tj ET
+BT /F2 10 Tf 0.10 0.42 0.78 rg 54 364 Td (SELECTED PROJECTS) Tj ET
+0.83 0.88 0.94 RG 0.8 w 54 357 m 558 357 l S
+BT /F2 11 Tf 0.06 0.09 0.16 rg 54 340 Td (Modern Portfolio Website) Tj ET
+BT /F1 9.4 Tf 0.06 0.09 0.16 rg 54 324 Td (Responsive animated portfolio with navbar, hero, about, skills, services, projects, testimonials, contact,) Tj ET
+BT /F1 9.4 Tf 0.06 0.09 0.16 rg 54 310 Td (dark/light mode, EmailJS contact form, and Vercel-ready React/Vite structure.) Tj ET
+BT /F2 9.2 Tf 0.10 0.42 0.78 rg 54 295 Td (Tech: React, Tailwind CSS, Framer Motion, EmailJS) Tj ET
+BT /F2 11 Tf 0.06 0.09 0.16 rg 54 267 Td (Practice Project Set) Tj ET
+BT /F1 9.4 Tf 0.06 0.09 0.16 rg 54 251 Td (Weather App, Movie Search App, SaaS Landing Page, GitHub Finder, and responsive UI practice builds.) Tj ET
+BT /F1 9.4 Tf 0.06 0.09 0.16 rg 54 237 Td (Focus: API integration concepts, card grids, responsive layouts, search interfaces, and clean UI structure.) Tj ET
+BT /F2 10 Tf 0.10 0.42 0.78 rg 54 202 Td (EDUCATION AND GOALS) Tj ET
+0.83 0.88 0.94 RG 0.8 w 54 195 m 558 195 l S
+BT /F2 10 Tf 0.10 0.42 0.78 rg 54 178 Td (") Tj ET
+BT /F1 9.4 Tf 0.06 0.09 0.16 rg 66 178 Td (Continuing frontend development learning with focus on React, responsive UI, and production workflows) Tj ET
+BT /F2 10 Tf 0.10 0.42 0.78 rg 54 161 Td (") Tj ET
+BT /F1 9.4 Tf 0.06 0.09 0.16 rg 66 161 Td (Goal: build real client applications, support freelance work, and grow toward MERN/full-stack development) Tj ET
+BT /F2 10 Tf 0.10 0.42 0.78 rg 54 126 Td (PROFESSIONAL STRENGTHS) Tj ET
+0.83 0.88 0.94 RG 0.8 w 54 119 m 558 119 l S
+BT /F2 10 Tf 0.10 0.42 0.78 rg 54 102 Td (") Tj ET
+BT /F1 9.4 Tf 0.06 0.09 0.16 rg 66 102 Td (Clean spacing, readable typography, mobile-first layouts, and consistent visual systems) Tj ET
+BT /F2 10 Tf 0.10 0.42 0.78 rg 54 85 Td (") Tj ET
+BT /F1 9.4 Tf 0.06 0.09 0.16 rg 66 85 Td (Client-focused communication, practical problem solving, and attention to UI details) Tj ET
+BT /F1 9.3 Tf 0.32 0.37 0.45 rg 54 48 Td (Portfolio Repository: github.com/shantopaul/Professional-Personal-Portfolio) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000321 00000 n 
+0000000396 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+5228
+%%EOF

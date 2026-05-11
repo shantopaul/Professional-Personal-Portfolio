@@ -92,7 +92,7 @@ function Navbar() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <ThemeToggle />
-          <a href={profile.resumeUrl} download className="primary-button px-5 py-2.5">
+          <a href={profile.resumeUrl} download={profile.resumeFileName} className="primary-button px-5 py-2.5">
             <Download size={17} />
             Resume
           </a>
@@ -127,7 +127,7 @@ function Navbar() {
                   <NavItem key={link.to} link={link} onClick={() => setIsOpen(false)} />
                 ))}
               </div>
-              <a href={profile.resumeUrl} download className="primary-button mt-5 w-full">
+              <a href={profile.resumeUrl} download={profile.resumeFileName} className="primary-button mt-5 w-full">
                 <Download size={17} />
                 Download Resume
               </a>
