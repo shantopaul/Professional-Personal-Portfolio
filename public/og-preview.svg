@@ -1,0 +1,9 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0F172A"/>
+  <rect x="72" y="72" width="1056" height="486" rx="42" fill="#111827" stroke="#1D4ED8" stroke-width="2"/>
+  <circle cx="982" cy="152" r="86" fill="#22C55E" fill-opacity="0.22"/>
+  <circle cx="216" cy="468" r="110" fill="#38BDF8" fill-opacity="0.18"/>
+  <text x="120" y="252" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="76" font-weight="700">Shanto Paul</text>
+  <text x="120" y="338" fill="#93C5FD" font-family="Arial, sans-serif" font-size="42" font-weight="600">Frontend Developer Portfolio</text>
+  <text x="120" y="414" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="30">React • Tailwind CSS • Framer Motion</text>
+</svg>
