@@ -2,7 +2,7 @@ export const profile = {
   name: 'Shanto Paul',
   role: 'Frontend Developer',
   location: 'Bangladesh',
-  email: 'hello.shanto@example.com',
+  email: 'shanto@shantopaul.com',
   resumeUrl: '/Shanto%20Paul%20Resume.pdf',
   resumeFileName: 'Shanto Paul Resume.pdf',
   tagline: 'I build modern, responsive, and animated web applications using React.js and Tailwind CSS.',
