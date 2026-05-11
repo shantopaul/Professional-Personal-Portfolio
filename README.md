@@ -475,4 +475,5 @@ npm run lint
 **Shanto Paul**  
 Frontend Developer  
 Email: [shanto@shantopaul.com](mailto:shanto@shantopaul.com)  
-GitHub: [github.com/shantopaul](https://github.com/shantopaul)
+GitHub: [github.com/shantopaul](https://github.com/shantopaul)  
+Website: [shantopaul.com](https://shantopaul.com)
