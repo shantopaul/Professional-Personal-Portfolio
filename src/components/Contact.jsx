@@ -1,4 +1,4 @@
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Loader2, Mail, MapPin, Send } from 'lucide-react';
 import { useMemo, useState } from 'react';
@@ -99,13 +99,16 @@ function Contact() {
           subject: form.subject,
           message: form.message,
         },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        },
       );
 
       setForm(initialForm);
       setStatus({ type: 'success', message: 'Message sent successfully. I will reply as soon as possible.' });
-    } catch {
-      setStatus({ type: 'error', message: 'Something went wrong while sending. Please try again later.' });
+    } catch (error) {
+      const errorDetails = error?.text || error?.message || 'Please check EmailJS service, template, and public key settings.';
+      setStatus({ type: 'error', message: `EmailJS error: ${errorDetails}` });
     } finally {
       setIsSubmitting(false);
     }
