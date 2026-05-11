@@ -42,7 +42,7 @@ function section(title, y) {
 
 function bullet(text, x, y) {
   return [
-    textLine('•', x, y, 10, colors.brand, 'F2'),
+    textLine('-', x, y, 10, colors.brand, 'F2'),
     textLine(text, x + 12, y, 9.4, colors.ink),
   ];
 }
@@ -53,7 +53,7 @@ const content = [
   rect(page.marginX, 707, 74, 4, colors.brand),
   textLine('SHANTO PAUL', page.marginX, 746, 24, colors.ink, 'F2'),
   textLine('Frontend Developer', page.marginX, 724, 12, colors.brand, 'F2'),
-  textLine('Bangladesh  |  hello.shanto@example.com  |  github.com/shantopaul', 318, 748, 9, colors.muted),
+  textLine('Bangladesh  |  shanto@shantopaul.com  |  github.com/shantopaul', 318, 748, 9, colors.muted),
   textLine('React.js  |  Tailwind CSS  |  Responsive Design  |  Framer Motion', 318, 731, 9, colors.muted),
 
   ...section('Professional Summary', 675),
