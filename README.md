@@ -438,6 +438,38 @@ This project was implemented with a professional feature-branch workflow. Major 
 
 Each feature branch was merged into `main` after implementation and verification.
 
+## Contributions
+
+Contributions are welcome. Anyone can suggest or work on:
+
+- New portfolio features
+- UI/UX improvements
+- Responsive design fixes
+- Accessibility improvements
+- Performance optimization
+- Bug fixes
+- Documentation improvements
+
+### How to Contribute
+
+1. Fork the repository.
+2. Create a new feature branch.
+3. Make the change with clean, readable code.
+4. Run the quality checks:
+
+```bash
+npm run build
+npm run lint
+```
+
+5. Open a pull request with a clear description of the change.
+
+### Contributors
+
+| Name | Email | Role |
+| --- | --- | --- |
+| Shanto Paul | [shanto@shantopaul.com](mailto:shanto@shantopaul.com) | Project Owner, Frontend Developer |
+
 ## Contact
 
 **Shanto Paul**  
