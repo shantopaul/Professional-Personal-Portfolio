@@ -2,7 +2,7 @@
 
 Modern, responsive, and production-ready personal portfolio website for a frontend developer. Built to showcase professional UI design, React development skills, responsive layouts, smooth animations, real project cards, downloadable resume, and a working EmailJS contact form.
 
-**Live Website:** [personal-portfolio.shantopaul.com](https://personal-portfolio.shantopaul.com/)
+**Live Website:** <a href="https://personal-portfolio.shantopaul.com/" target="_blank" rel="noopener noreferrer">personal-portfolio.shantopaul.com</a>
 
 **Repository:** [github.com/shantopaul/Professional-Personal-Portfolio](https://github.com/shantopaul/Professional-Personal-Portfolio)
 
@@ -397,7 +397,7 @@ Add the EmailJS environment variables in Vercel Project Settings before deployin
 
 Live production URL:
 
-[https://personal-portfolio.shantopaul.com/](https://personal-portfolio.shantopaul.com/)
+<a href="https://personal-portfolio.shantopaul.com/" target="_blank" rel="noopener noreferrer">https://personal-portfolio.shantopaul.com/</a>
 
 ## Quality Checks
 
