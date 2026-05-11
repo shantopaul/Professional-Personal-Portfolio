@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-function SectionHeader({ eyebrow, title, description, align = 'left' }) {
+function SectionHeader({ eyebrow, title, description, align = 'left', titleId }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 24 }}
@@ -10,7 +10,7 @@ function SectionHeader({ eyebrow, title, description, align = 'left' }) {
       className={align === 'center' ? 'mx-auto max-w-3xl text-center' : 'max-w-3xl'}
     >
       <p className="section-eyebrow">{eyebrow}</p>
-      <h2 className="section-title">{title}</h2>
+      <h2 id={titleId} className="section-title">{title}</h2>
       {description ? <p className="section-copy">{description}</p> : null}
     </motion.div>
   );

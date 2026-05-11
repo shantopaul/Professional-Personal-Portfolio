@@ -10,6 +10,7 @@ function Testimonials() {
         <SectionHeader
           eyebrow="Testimonials"
           title="Trust signals for client-facing work."
+          titleId="testimonials-title"
           description="Short client-style reviews communicate reliability, attention to detail, and the practical value of polished frontend delivery."
           align="center"
         />
