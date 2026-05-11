@@ -133,26 +133,60 @@ Preview the production build locally.
 
 ```text
 Professional-Personal-Portfolio/
-├── assets/
-│   └── screenshots/
-├── public/
-│   ├── Shanto Paul Resume.pdf
-│   ├── favicon.svg
-│   └── og-preview.svg
-├── scripts/
-│   └── create-resume-pdf.mjs
-├── src/
-│   ├── components/
-│   ├── data/
-│   ├── hooks/
-│   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
-├── .env.example
-├── package.json
-├── tailwind.config.js
-├── vercel.json
-└── vite.config.js
+|-- assets/
+|   `-- screenshots/
+|       |-- desktop-light.jpg          # README preview: desktop light theme
+|       |-- desktop-dark.jpg           # README preview: desktop dark theme
+|       |-- mobile-light.jpg           # README preview: mobile light theme
+|       `-- mobile-dark.jpg            # README preview: mobile dark theme
+|
+|-- public/
+|   |-- Shanto Paul Resume.pdf         # Downloadable one-page resume
+|   |-- favicon.svg                    # Browser favicon
+|   `-- og-preview.svg                 # Open Graph/social preview image
+|
+|-- scripts/
+|   `-- create-resume-pdf.mjs          # Script to regenerate the resume PDF
+|
+|-- src/
+|   |-- components/
+|   |   |-- Navbar.jsx                 # Sticky navigation, mobile menu, resume button
+|   |   |-- Hero.jsx                   # Hero intro, CTA buttons, animated code card
+|   |   |-- About.jsx                  # About section, stats, background cards
+|   |   |-- Skills.jsx                 # Skill groups, icons, progress bars
+|   |   |-- Services.jsx               # Client service cards
+|   |   |-- Projects.jsx               # Project grid with demo and GitHub links
+|   |   |-- Testimonials.jsx           # Client review cards
+|   |   |-- Contact.jsx                # EmailJS contact form and validation
+|   |   |-- Footer.jsx                 # Footer navigation and social links
+|   |   |-- ThemeToggle.jsx            # Light/dark mode toggle button
+|   |   `-- SectionHeader.jsx          # Reusable section heading component
+|   |
+|   |-- data/
+|   |   |-- profile.js                 # Name, role, email, resume URL, social links
+|   |   |-- skills.js                  # Skill categories and progress values
+|   |   |-- services.js                # Service card data
+|   |   |-- projects.js                # Project card data
+|   |   `-- testimonials.js            # Testimonial/review data
+|   |
+|   |-- hooks/
+|   |   `-- useTheme.jsx               # Theme context and localStorage persistence
+|   |
+|   |-- App.jsx                        # Main page composition
+|   |-- main.jsx                       # React application entry point
+|   `-- index.css                      # Tailwind imports and global component classes
+|
+|-- .env.example                       # Example EmailJS environment variables
+|-- .gitattributes                     # Marks PDF assets as binary
+|-- .gitignore                         # Ignores node_modules, dist, .env files
+|-- eslint.config.js                   # ESLint configuration
+|-- index.html                         # Vite HTML shell with SEO metadata
+|-- package.json                       # Dependencies and npm scripts
+|-- package-lock.json                  # Locked dependency versions
+|-- postcss.config.js                  # PostCSS/Tailwind processing config
+|-- tailwind.config.js                 # Tailwind theme, colors, shadows, dark mode
+|-- vercel.json                        # Vercel build/output/security headers config
+`-- vite.config.js                     # Vite React and build configuration
 ```
 
 ## EmailJS Setup
