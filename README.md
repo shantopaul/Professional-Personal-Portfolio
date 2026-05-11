@@ -191,17 +191,83 @@ Professional-Personal-Portfolio/
 
 ## EmailJS Setup
 
-The contact form uses EmailJS for frontend-only email delivery.
+The contact form uses EmailJS for frontend-only email delivery. No backend server is required. The form sends these fields from `src/components/Contact.jsx`:
 
-Required EmailJS values:
+```js
+{
+  from_name: form.name,
+  from_email: form.email,
+  subject: form.subject,
+  message: form.message
+}
+```
+
+### 1. Create an EmailJS Account
+
+1. Go to [EmailJS](https://www.emailjs.com/).
+2. Create a free account.
+3. Open the EmailJS dashboard.
+4. Confirm the free request limit shown in the dashboard.
+
+### 2. Create an Email Service
+
+1. Go to **Email Services**.
+2. Click **Add New Service**.
+3. Select **Gmail** or another supported provider.
+4. Connect the email account that should send portfolio messages.
+5. Allow the requested permission to send email.
+6. Save the service.
+
+After saving, copy the **Service ID**.
+
+Example:
 
 ```env
 VITE_EMAILJS_SERVICE_ID=service_xxxxx
-VITE_EMAILJS_TEMPLATE_ID=template_xxxxx
-VITE_EMAILJS_PUBLIC_KEY=public_key_xxxxx
 ```
 
-Recommended template variables:
+### 3. Create an Email Template
+
+1. Go to **Email Templates**.
+2. Click **Create New Template**.
+3. Add a professional template name, for example:
+
+```text
+Portfolio Contact Form
+```
+
+4. Use this subject:
+
+```text
+New portfolio message from {{from_name}} - {{subject}}
+```
+
+5. Use this email body:
+
+```text
+You received a new message from your portfolio website.
+
+Name: {{from_name}}
+Email: {{from_email}}
+Subject: {{subject}}
+
+Message:
+{{message}}
+```
+
+### 4. Configure Template Settings
+
+Recommended template fields:
+
+| Field | Value |
+| --- | --- |
+| To Email | Your receiving email address |
+| From Name | `{{from_name}}` or your portfolio name |
+| From Email | Default EmailJS/service email |
+| Reply To | `{{from_email}}` |
+| Subject | `New portfolio message from {{from_name}} - {{subject}}` |
+
+Required template variables:
 
 ```text
 {{from_name}}
@@ -210,11 +276,109 @@ Recommended template variables:
 {{message}}
 ```
 
-Recommended template settings:
+After saving, copy the **Template ID**.
 
-- **To Email:** portfolio owner email
-- **Reply To:** `{{from_email}}`
-- **Subject:** `New portfolio message from {{from_name}} - {{subject}}`
+Example:
+
+```env
+VITE_EMAILJS_TEMPLATE_ID=template_xxxxx
+```
+
+### 5. Get the Public Key
+
+1. Go to **Account**.
+2. Open the **General** tab.
+3. Find **API Keys**.
+4. Copy the **Public Key**.
+
+Example:
+
+```env
+VITE_EMAILJS_PUBLIC_KEY=public_key_xxxxx
+```
+
+Do not use the EmailJS private key in this frontend project.
+
+### 6. Add Local Environment Variables
+
+Create a `.env` file in the project root:
+
+```env
+VITE_EMAILJS_SERVICE_ID=service_xxxxx
+VITE_EMAILJS_TEMPLATE_ID=template_xxxxx
+VITE_EMAILJS_PUBLIC_KEY=public_key_xxxxx
+```
+
+Restart the development server after changing `.env`:
+
+```bash
+npm run dev
+```
+
+### 7. Add Environment Variables in Vercel
+
+For production deployment:
+
+1. Open the Vercel project dashboard.
+2. Go to **Settings**.
+3. Go to **Environment Variables**.
+4. Add all three variables:
+
+```env
+VITE_EMAILJS_SERVICE_ID=service_xxxxx
+VITE_EMAILJS_TEMPLATE_ID=template_xxxxx
+VITE_EMAILJS_PUBLIC_KEY=public_key_xxxxx
+```
+
+5. Enable them for **Production**, **Preview**, and **Development** if needed.
+6. Redeploy the project.
+
+### 8. Test the Contact Form
+
+Use the live website or local development server:
+
+```text
+https://personal-portfolio.shantopaul.com/
+```
+
+Submit a test message:
+
+```text
+Name: Test User
+Email: test@example.com
+Subject: Portfolio Test
+Message: This is a test message from the portfolio contact form.
+```
+
+Expected result:
+
+```text
+Message sent successfully. I will reply as soon as possible.
+```
+
+Then check:
+
+- Receiving email inbox
+- Spam folder
+- EmailJS **Email History**
+
+### 9. Troubleshooting
+
+| Problem | Meaning | Fix |
+| --- | --- | --- |
+| `EmailJS environment variables are missing` | `.env` values are not loaded | Add `.env` and restart `npm run dev` |
+| `Gmail_API: Request had insufficient authentication scopes` | Gmail did not give EmailJS enough send permission | Disconnect Gmail in EmailJS, remove EmailJS from Google Account permissions, reconnect, and allow all requested permissions |
+| `404` from EmailJS API | Wrong service ID, template ID, or SDK setup | Confirm IDs and use `@emailjs/browser` |
+| No email received but success appears | Email may be filtered | Check spam, promotions, all mail, and EmailJS history |
+| Works locally but not on Vercel | Env variables missing in Vercel | Add variables in Vercel settings and redeploy |
+
+### 10. Security Notes
+
+- `.env` is ignored by Git.
+- Never commit EmailJS private keys.
+- EmailJS Public Key is designed for browser-side usage.
+- Keep EmailJS templates limited to contact-form use.
+- Restrict allowed domains in EmailJS settings when available.
 
 ## Deployment
 
