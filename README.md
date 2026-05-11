@@ -16,13 +16,11 @@ Modern, responsive, and production-ready personal portfolio website for a fronte
 
 ![Desktop dark theme](assets/screenshots/desktop-dark.jpg)
 
-### Mobile - Light Theme
+### Mobile - Light and Dark Theme
 
-![Mobile light theme](assets/screenshots/mobile-light.jpg)
-
-### Mobile - Dark Theme
-
-![Mobile dark theme](assets/screenshots/mobile-dark.jpg)
+| Light Theme | Dark Theme |
+| --- | --- |
+| <img src="assets/screenshots/mobile-light.jpg" alt="Mobile light theme" width="280"> | <img src="assets/screenshots/mobile-dark.jpg" alt="Mobile dark theme" width="280"> |
 
 ## Project Highlights
 
