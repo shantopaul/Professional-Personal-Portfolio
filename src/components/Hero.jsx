@@ -42,9 +42,9 @@ function Hero() {
 
           <motion.h1
             variants={itemVariants}
-            className="mt-7 max-w-4xl text-4xl font-black leading-tight tracking-normal text-slate-950 dark:text-white sm:text-6xl lg:text-7xl"
+            className="mt-7 max-w-3xl text-4xl font-black leading-[1.08] tracking-normal text-slate-950 dark:text-white sm:text-5xl lg:text-6xl"
           >
-            Hi, I am {profile.name}. I build polished React interfaces.
+            Hi, I am {profile.name}. I design and build modern React websites.
           </motion.h1>
 
           <motion.p
