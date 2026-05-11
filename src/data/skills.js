@@ -11,7 +11,7 @@ import {
   Wind,
 } from 'lucide-react';
 import { FaCss3Alt, FaHtml5, FaJs, FaNodeJs, FaReact } from 'react-icons/fa';
-import { SiExpress, SiMongodb, SiNextdotjs, SiVisualstudiocode } from 'react-icons/si';
+import { SiExpress, SiMongodb, SiNextdotjs } from 'react-icons/si';
 
 export const skillGroups = [
   {
@@ -32,7 +32,7 @@ export const skillGroups = [
     skills: [
       { name: 'Git', level: 82, icon: GitPullRequest },
       { name: 'GitHub', level: 84, icon: Github },
-      { name: 'VS Code', level: 90, icon: SiVisualstudiocode },
+      { name: 'VS Code', level: 90, icon: SquareCode },
       { name: 'Figma', level: 72, icon: Figma },
     ],
   },
